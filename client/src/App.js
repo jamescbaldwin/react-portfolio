@@ -3,6 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Particles from "react-particles-js";
 import Navbar from "./components/Navbar";
 import Header from "./components/Header";
+import About from "./components/About";
 import Portfolio from "./components/Portfolio";
 
 function App() {
@@ -12,7 +13,7 @@ function App() {
       params={{
         particles: {
           number: {
-            value: 30,
+            value: 40,
             density: {
               enable: true, 
               value_area: 900
@@ -30,6 +31,7 @@ function App() {
     />
     <Navbar />
     <Header />
+    <About />
     <Portfolio />
     </>
   );
