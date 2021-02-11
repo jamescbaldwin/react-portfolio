@@ -143,7 +143,33 @@ nav ul li {
 }
 
 /**********************************   ABOUT    *******************************/
-.aboutEl {
+
+.photo-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profileImg {
+  width: 16rem;
+  border-radius: 50%;
+  padding: .3rem;
+  border: 1px solid var(--primary-orange);
+}
+
+.aboutHeading {
+  color: var(--primary-orange);
+  text-transform: uppercase;
+
+}
+
+@media(max-width: 468px) {
+  .profileImg {
+    width: 10rem;
+  }
+}
+
+
+/* .aboutEl {
   display: flex;
   position: absolute;
   justify-content: center;
@@ -181,7 +207,7 @@ nav ul li {
   width: 1000px;
   padding-top: 30px;
   margin-left: 40px;
-}
+} */
 
 /**********************************   PORTFOLIO    *******************************/
 
