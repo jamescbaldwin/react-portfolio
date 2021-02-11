@@ -7,6 +7,7 @@
   --primary-red: #ef4035;
   --primary-hover-red: #f33501;
   --primary-teal: rgb(63, 190, 190);
+  --primary-light-grey: rgba(193, 193, 193, 0.815);
 }
 
 body {
@@ -149,6 +150,7 @@ nav ul li {
   justify-content: center;
   align-items: center;
 }
+
 .profileImg {
   width: 16rem;
   border-radius: 50%;
@@ -166,6 +168,10 @@ nav ul li {
   .profileImg {
     width: 10rem;
   }
+}
+
+.about {
+  background-color: var(--primary-teal);
 }
 
 
@@ -208,6 +214,80 @@ nav ul li {
   padding-top: 30px;
   margin-left: 40px;
 } */
+
+/**********************************   Services    *******************************/
+
+.services {
+  text-align: center;
+  padding-bottom: 2rem;
+  background: var(--primary-light-grey);
+}
+
+.services h1 {
+  color: rgb(52, 58, 64);
+  text-transform: uppercase;
+}
+
+.services .circle {
+  position: relative;
+  margin: 0.375rem auto;
+  background: var(--primary-orange);
+  border-radius: 50%;
+  width: 3.125rem;
+  height: 3.125rem;
+}
+
+.services .icon {
+  font-size: 1.4rem;
+  color: var(--primary-white);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.services .box {
+  height: 16rem;
+  border-bottom: 5px solid var(--primary-orange);
+  padding: 10px;
+  margin-bottom: 30px;
+  background: var(--primary-white);
+  box-shadow: 10px 10px 12px;
+}
+
+.services .box:hover {
+  background: var(--primary-orange);
+  border-bottom: var(--dark-blue);
+}
+
+.services .box:hover .circle {
+  background: var(--primary-white);
+}
+
+.services .box:hover .icon {
+  color: var(--primary-orange)
+}
+
+.services .box:hover p {
+  /* color: var(--primary-white); */
+}
+
+
+
+
+
+
+
+
+
+
+/**********************************       *******************************/
+
+
+
+
+
+
 
 /**********************************   PORTFOLIO    *******************************/
 
