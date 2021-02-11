@@ -5,7 +5,8 @@ import Navbar from "./components/Navbar";
 import Header from "./components/Header";
 import About from "./components/About";
 import Services from "./components/Services";
-import Portfolio from "./components/Portfolio";
+// import Portfolio from "./components/Portfolio";
+import Experience from "./components/Experience";
 
 
 function App() {
@@ -35,7 +36,8 @@ function App() {
     <Header />
     <About />
     <Services />
-    <Portfolio />
+    {/* <Portfolio /> */}
+    <Experience />
     </>
   );
 }
