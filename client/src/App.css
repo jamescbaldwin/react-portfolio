@@ -420,6 +420,19 @@ nav ul li {
   padding: 0 0.5rem;
 }
 
+
+
+
+
+/*********************************************************************/
+.popupbox-titleBar span {
+  color: var(--primary-orange);
+}
+/*********************************************************************/
+
+
+
+
 .hyper-link {
   cursor: pointer;
   color: var(--primary-teal);
@@ -452,4 +465,108 @@ nav ul li {
     width: 30%;
   }
 }
-/**********************************       *******************************/
+
+/**********************************  Contact     *******************************/
+
+.contact {
+  background: rgb(52, 53, 53);
+  padding: 3rem 0;
+  font-family: Monaco;
+}
+
+.contact h1 {
+  color: var(--primary-orange);
+  padding: 1.3rem 0;
+  text-transform: uppercase;
+}
+
+.contact p {
+  color: var(--primary-light-grey);
+  font-size: 1.2rem;
+}
+
+.contact input, .contact textarea {
+  width: 100%;
+  box-sizing: border-box;
+  background: none;
+  resize: none;
+  border: 0;
+  border-bottom: 2px solid var(--primary-teal);
+  border-radius: 0;
+  color: var(--primary-light-grey);
+  outline: 0 !important;
+  box-shadow: none!important;
+  margin-bottom: 1rem;
+  padding-left: 0!important;
+}
+
+.contat .container {
+  padding: 4rem 0;
+}
+
+.contact input:focus, .contact textarea:focus {
+  background: transparent;
+  color: var(--primary-teal);
+  border-bottom: 2px solid var(--primary-teal);
+}
+
+.contact textarea {
+  height: 12.2rem !important;
+}
+
+.contact-btn {
+  margin: 1rem 0 0 0;
+  width: 100%;
+  background: var(--primary-orange);
+  color: rgb(21, 21, 21);
+  border-radius: 1!important;
+}
+
+@media(max-width:768px) {
+  .contaxt {
+    overflow-x: hidden;
+  }
+  .contact .container {
+    padding: 0 1rem;
+  }
+  .contact p {
+    padding: 0 0.4rem;
+  }
+}
+
+.line {
+  position: relative;
+  top: -2rem;
+  width: 0;
+  height: 2px;
+  background: var(--primary-orange);
+  display: inline-block;
+}
+
+input:focus+.line, textarea:focus+.line {
+  width: 100%;
+  transition: width 0.5s ease-in-out;
+}
+
+input.form-control {
+  margin: -0.3rem 0 !;
+}
+
+textarea.form-control {
+  margin: -0.3rem 0 !;
+}
+
+.success-message {
+  font-weight: 900;
+  color: var(--primary-teal);
+}
+
+.text-center input ref message {
+  margin-top: -10px;
+}
+
+/**********************************  Contact     *******************************/
+
+
+/**********************************  Contact     *******************************/
+
