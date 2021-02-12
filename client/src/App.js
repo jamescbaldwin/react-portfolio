@@ -8,11 +8,14 @@ import Services from "./components/Services";
 import Experience from "./components/Experience";
 import Portfolio from "./components/Portfolio";
 import Contact from "./components/Contact";
+// import { Route, Switch } from "react-router-dom";
+// import { BrowserRouter as Router } from "react-router-dom";
 
 
 
 function App() {
   return (
+    // <Router>
     <>
     <Particles 
       params={{
@@ -41,6 +44,7 @@ function App() {
     <Experience />
     <Portfolio />
     <Contact />
+    {/* </Router> */}
     </>
   );
 }

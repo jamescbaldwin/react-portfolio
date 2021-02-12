@@ -12,6 +12,15 @@ const Portfolio = () => {
 
     /// Burger App
     const openPopupboxBurger = () => {
+        const popupboxConfigBurger = {
+            titleBar: {
+                enable: true,
+                text: "Eat Da Burger MVC App",
+            },
+            fadeIn: true,
+            fadeInSpeed: 500
+        }
+        
         const content = (
             <>
                 <img className="portfolio-image-popupbox" src={burger} alt="Burger Handlebars App..." />
@@ -19,20 +28,19 @@ const Portfolio = () => {
                 <b>GitHub:</b> <a className="hyper-link" onClick={() => window.open("https://github.com/jamescbaldwin/eat-da-burger")}>https://github.com/jamescbaldwin/eat-da-burger</a>
             </>
             )
-            PopupboxManager.open({ content })
+            PopupboxManager.open({ content, config: popupboxConfigBurger })
         }
 
-    const popupboxConfigBurger = {
-        titleBar: {
-            enable: true,
-            text: "Eat Da Burger MVC App",
-        },
-        fadeIn: true,
-        fadeInSpeed: 500
-    }
-    
     /// Wander Plus App
     const openPopupboxWander = () => {
+        const popupboxConfigWander = {
+            titleBar: {
+                enable: true,
+                text: "WANDER + PLUS Geo/Info APP"
+            },
+            fadeIn: true,
+            fadeInSpeed: 500
+        }
         const content = (
         <>
             <img className="portfolio-image-popupbox" src={wander} alt="WANDER + PLUS..." />
@@ -40,20 +48,21 @@ const Portfolio = () => {
             <b>GitHub:</b> <a className="hyper-link" onClick={() => window.open("https://github.com/jamescbaldwin/WANDER-PLUS")}>https://github.com/jamescbaldwin/WANDER-PLUS</a>
         </>
         )
-        PopupboxManager.open({ content })
+        PopupboxManager.open({ content, config: popupboxConfigWander })
     }
 
-    const popupboxConfigWander = {
-        titleBar: {
-            enable: true,
-            text: "WANDER + PLUS Geo/Info APP"
-        },
-        fadeIn: true,
-        fadeInSpeed: 500
-    }
    
     /// Garage Sale App
     const openPopupboxGarage = () => {
+        const popupboxConfigGarage = {
+            titleBar: {
+                enable: true,
+                text: "GARAGE-SWAP with Passport.js"
+            },
+            fadeIn: true,
+            fadeInSpeed: 500
+        }
+
         const content = (
         <>
             <img className="portfolio-image-popupbox" src={garage} alt="Garage-Swap..." />
@@ -61,20 +70,20 @@ const Portfolio = () => {
             <b>GitHub:</b> <a className="hyper-link" onClick={() => window.open("https://github.com/jamescbaldwin/DEMO100")}>https://github.com/jamescbaldwin/DEMO100</a>
         </>
         )
-        PopupboxManager.open({ content })
-    }
-
-    const popupboxConfigGarage = {
-        titleBar: {
-            enable: true,
-            text: "GARAGE-SWAP with Passport.js"
-        },
-        fadeIn: true,
-        fadeInSpeed: 500
+        PopupboxManager.open({ content, config: popupboxConfigGarage })
     }
     
     /// Directory App
     const openPopupboxDirectory = () => {
+        const popupboxConfigDirectory = {
+            titleBar: {
+                enable: true,
+                text: "Employee Directory made with React"
+            },
+            fadeIn: true,
+            fadeInSpeed: 500
+        }
+
         const content = (
         <>
             <img className="portfolio-image-popupbox" src={directory} alt="Employee Directory..." />
@@ -82,16 +91,7 @@ const Portfolio = () => {
             <b>GitHub:</b> <a className="hyper-link" onClick={() => window.open("https://github.com/jamescbaldwin/react-employee-directory")}>https://github.com/jamescbaldwin/react-employee-directory</a>
         </>
         )
-        PopupboxManager.open({ content })
-    }
-
-    const popupboxConfigDirectory = {
-        titleBar: {
-            enable: true,
-            text: "Employee Directory made with React"
-        },
-        fadeIn: true,
-        fadeInSpeed: 500
+        PopupboxManager.open({ content, config: popupboxConfigDirectory })
     }
     ////////////
 
@@ -122,10 +122,10 @@ const Portfolio = () => {
                     </div>
                 </div>
             </div>
-            <PopupboxContainer {...popupboxConfigBurger} />
-            <PopupboxContainer {...popupboxConfigGarage} />
-            <PopupboxContainer {...popupboxConfigWander} />
-            <PopupboxContainer {...popupboxConfigDirectory} />
+            <PopupboxContainer />
+            <PopupboxContainer />
+            <PopupboxContainer />
+            <PopupboxContainer />
        </div>
     )
 }
