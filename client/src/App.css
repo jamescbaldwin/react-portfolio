@@ -34,6 +34,10 @@ nav ul li {
   text-transform: uppercase;
 }
 
+.nav-link href {
+  cursor: pointer !important;
+}
+
 .navbar-nav > li > a {
   margin-right: 12px;
   margin-left: 12px;
@@ -71,7 +75,7 @@ nav ul li {
   background-color: var(--dark-blue);
   background-size: cover;
   background-position: center;
-  height: 90vh;
+  height: 100vh;
 }
 
 .main-info {
@@ -415,6 +419,10 @@ nav ul li {
   cursor: pointer;
 }
 
+.popupbox-wrapper {
+  margin-top: 7rem;
+}
+
 .portfolio-image-popupbox {
   width: 50rem;
   padding: 0 0.5rem;
@@ -576,6 +584,27 @@ textarea.form-control {
 
 /**********************************  footer     *******************************/
 
+.footer {
+  background: var(--primary-light-grey);
+  color: rgb(35, 36, 36);
+  padding: 3rem;
+}
 
-/**********************************  Contact     *******************************/
+.footer a {
+  text-decoration: none;
+  color: rgb(35, 36, 36);
+}
+
+.footer a:hover {
+  text-decoration: none;
+  color: var(--primary-orange);
+  cursor: pointer;
+}
+
+.foter p {
+  margin-bottom: 0;
+}
+
+
+/**********************************  END  *******************************/
 

@@ -8,6 +8,7 @@ import Services from "./components/Services";
 import Experience from "./components/Experience";
 import Portfolio from "./components/Portfolio";
 import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 // import { Route, Switch } from "react-router-dom";
 // import { BrowserRouter as Router } from "react-router-dom";
 
@@ -44,7 +45,10 @@ function App() {
     <Experience />
     <Portfolio />
     <Contact />
+    <Footer />
     {/* </Router> */}
+
+    {/* // pdf resume in separate page //  */}
     </>
   );
 }

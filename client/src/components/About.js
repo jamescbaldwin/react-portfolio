@@ -3,7 +3,7 @@ import profile from "../profile1.jpeg";
 
 const About = () => {
     return (
-        <div className="about container py-5">
+        <div id="about" className="about container py-5">
             <div className="row">
                 <div className="col-lg-6 col-xm-12">
                     <div className="photo-wrap mb-5">
