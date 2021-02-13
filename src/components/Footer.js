@@ -8,7 +8,8 @@ import {
     RedditIcon,
     LinkedinShareButton,
     LinkedinIcon
-} from "react-share"
+} from "react-share";
+import {Link} from "react-scroll";
 
 const Footer = () => {
     return (
@@ -20,7 +21,7 @@ const Footer = () => {
                             <p>3484 Cook Street, Mebane, North Carolina</p>
                         </div>
                         <div className="d-flex">
-                            <p href="tel:555-555-5555">(336)260-2653</p>
+                            <p href="tel:555-555-5555">+1 (336) 260-2653</p>
                         </div>
                         <div className="d-flex">
                             <p>jamescbaldwin@gmail.com</p>
@@ -28,24 +29,24 @@ const Footer = () => {
                     </div>
                         <div className="col-lg-3 col-md-2 col-sm-6">
                             <div className="row">
-                                <div className="col">
-                                    <a className="footer-nav">Home</a>
+                                <div className="col footer-links">
+                                    <Link smooth={true} to="home" className="footer-nav">Home</Link>
                                     <br />
-                                    <a className="footer-nav">About</a>
+                                    <Link smooth={true} to="about" className="footer-nav">About</Link>
                                     <br></br>
-                                    <a className="footer-nav">Services</a>
+                                    <Link smooth={true} to="services" className="footer-nav">Services</Link>
                                 </div>
-                                <div className="col">
-                                    <a className="footer-nav">Experience</a>
+                                <div className="col footer-links">
+                                    <Link smooth={true} to="experience" className="footer-nav">Experience</Link>
                                     <br></br>
-                                    <a className="footer-nav">Portoflio</a>
+                                    <Link smooth={true} to="portfolio" className="footer-nav">Portoflio</Link>
                                     <br></br>
-                                    <a className="footer-nav">Contact</a>
+                                    <Link smooth={true} to="contact" className="footer-nav">Contact</Link>
                                 </div>
                             </div>
                         </div>
                         <div className="col-lg-5 col-md-5 col-sm-6 align-items-center">
-                            <div className="d-flex justify-content-center">
+                            <div id="iconEl" className="d-flex justify-content-center">
                                 <FacebookShareButton
                                 url={"https://www.facebook.com/jamescbaldwiniv"}
                                 quote={"FullStack Developer"}
@@ -78,9 +79,9 @@ const Footer = () => {
                                  <LinkedinIcon  className="mx-3" size={36}/>
                                 </LinkedinShareButton> 
                             </div>
-                            <p className="pt-3 text-center">
+                            <p id="copyright" className="pt-3 text-center">
                                 Copyright&copy;
-                                {new Date().getFullYear()}&nbsp;New Horizon | All Rights Reserved
+                                {new Date().getFullYear()}&nbsp;JCB4 | All Rights Reserved
                             </p>
                         </div>
                   </div>

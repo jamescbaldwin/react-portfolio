@@ -24,7 +24,7 @@ const Portfolio = () => {
         const content = (
             <>
                 <img className="portfolio-image-popupbox" src={burger} alt="Burger Handlebars App..." />
-                <p>Sed consectetur massa sed metus elementum, blandit suscipit ante blandit. In venenatis tortor lorem, vitae placerat sapien lacinia vitae.</p>
+                <p>A whimsical app in which users 'devour' burgers, built with MySQL, Node, Express, Handlebars, and homemade ORMs.</p>
                 <b>GitHub:</b> <a className="hyper-link" onClick={() => window.open("https://github.com/jamescbaldwin/eat-da-burger")}>https://github.com/jamescbaldwin/eat-da-burger</a>
             </>
             )
@@ -44,7 +44,7 @@ const Portfolio = () => {
         const content = (
         <>
             <img className="portfolio-image-popupbox" src={wander} alt="WANDER + PLUS..." />
-            <p>Sed consectetur massa sed metus elementum, blandit suscipit ante blandit. In venenatis tortor lorem, vitae placerat sapien lacinia vitae.</p>
+            <p>Wander Plus delivers specs on any country a user searches, per reastcountries API, and features parallax scroll.</p>
             <b>GitHub:</b> <a className="hyper-link" onClick={() => window.open("https://github.com/jamescbaldwin/WANDER-PLUS")}>https://github.com/jamescbaldwin/WANDER-PLUS</a>
         </>
         )
@@ -66,7 +66,7 @@ const Portfolio = () => {
         const content = (
         <>
             <img className="portfolio-image-popupbox" src={garage} alt="Garage-Swap..." />
-            <p>Sed consectetur massa sed metus elementum, blandit suscipit ante blandit. In venenatis tortor lorem, vitae placerat sapien lacinia vitae.</p>
+            <p>Neccessitated by COVID-19, Garage-Swap allows community members to buy and sell local goods from their own home.</p>
             <b>GitHub:</b> <a className="hyper-link" onClick={() => window.open("https://github.com/jamescbaldwin/DEMO100")}>https://github.com/jamescbaldwin/DEMO100</a>
         </>
         )
@@ -87,7 +87,7 @@ const Portfolio = () => {
         const content = (
         <>
             <img className="portfolio-image-popupbox" src={directory} alt="Employee Directory..." />
-            <p>Sed consectetur massa sed metus elementum, blandit suscipit ante blandit. In venenatis tortor lorem, vitae placerat sapien lacinia vitae.</p>
+            <p>A React employee directory, allowing users to alphabetically sort or filter a search for specific employees. </p>
             <b>GitHub:</b> <a className="hyper-link" onClick={() => window.open("https://github.com/jamescbaldwin/react-employee-directory")}>https://github.com/jamescbaldwin/react-employee-directory</a>
         </>
         )

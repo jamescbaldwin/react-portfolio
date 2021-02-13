@@ -1,17 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
 
 :root {
+  --smoke: rgb(186, 187, 201);
+  --bluish: rgb(65, 52, 252);
+  --navy: rgb(29, 38, 75);
+  --lava: rgb(240, 76, 76);
   --primary-white: whitesmoke;
   --primary-orange: orange;
   --dark-blue: rgb(30, 48, 96);
   --primary-red: #ef4035;
   --primary-hover-red: #f33501;
-  --primary-teal: rgb(63, 190, 190);
+  --primary-teal: rgb(6, 165, 205);
   --primary-light-grey: rgba(193, 193, 193, 0.815);
 }
 
 body {
-  font-family: "Monaco" sans-serif;
+  background-color: var(--bluish)!important;
 }
 /************************* NAVBAR *******************************/
 .nav {
@@ -23,6 +27,10 @@ body {
 }
 
 /************************* MENU LINKS ****************************/
+.navbar {
+  background-color: rgb(22, 30, 58);
+  opacity: 0.9;
+}
 nav a.nav-link {
   font-size: 1rem;
   /* font-weight: 500; */
@@ -57,6 +65,8 @@ nav ul li {
   }
 }
 
+
+
 .navbar-nav > li > a.active, .navbar-nav > li > a.active:focus {
   border-top: 0.1875rem solid var(--primary-orange);
 }
@@ -72,7 +82,7 @@ nav ul li {
 .header-wrapper {
   position: relative;
   /* background: url(background1.jpg); */
-  background-color: var(--dark-blue);
+  background-color: var(--navy);
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -94,7 +104,7 @@ nav ul li {
 }
 
 .main-info h1 {
-  color: var(--primary-teal);
+  color: var(--smoke);
   text-transform: uppercase;
   font-family: Monaco;
 }
@@ -153,18 +163,21 @@ nav ul li {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: 4rem;
 }
 
 .profileImg {
-  width: 16rem;
+  width: 20rem;
   border-radius: 50%;
   padding: .3rem;
   border: 1px solid var(--primary-orange);
 }
 
 .aboutHeading {
-  color: var(--primary-orange);
+  color: var(--lava);
+  font-family: Monaco;
   text-transform: uppercase;
+  padding-top: 4rem;
 
 }
 
@@ -175,67 +188,36 @@ nav ul li {
 }
 
 .about {
-  background-color: var(--primary-teal);
+  background-color: var(--bluish);
 }
 
-
-/* .aboutEl {
-  display: flex;
-  position: absolute;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  min-width: 100%;
-  min-height: 600px;
-  background-color: rgb(63, 190, 190);
-  color: var(--dark-blue);
-  font-family: Monaco;
-  z-index: 1;
+#aboutEl {
+  padding-right: 5rem;
 }
-
-.contentRow {
-  max-width: 80%;
-  display: flex;
-  justify-content: stretch;
-  margin-left: 10%;
-  margin-right: 10%;
-  padding-top: 30px;
-  line-height: 2;
-  
-}
-
-#profilePicture {
-  display: block;
-  margin-top: 20px;
-  margin-bottom: 30px;
-  margin-left: auto;
-  margin-right: 20px;
-  border-radius: 8px;
-}
-
-#blurb {
-  width: 1000px;
-  padding-top: 30px;
-  margin-left: 40px;
-} */
-
+ .about p {
+   color: var(--smoke);
+   font-family: Monaco;
+   font-size: small;
+   padding-top: 0rem;
+ }
 /**********************************   Services    *******************************/
 
 .services {
   text-align: center;
   padding-bottom: 2rem;
-  background: var(--primary-light-grey);
+  background: var(--smoke);
 }
 
 .services h1 {
-  color: rgb(52, 58, 64);
+  font-family: Monaco;
+  color: var(--navy);
   text-transform: uppercase;
 }
 
 .services .circle {
   position: relative;
   margin: 0.375rem auto;
-  background: var(--primary-orange);
+  background: var(--navy);
   border-radius: 50%;
   width: 3.125rem;
   height: 3.125rem;
@@ -252,29 +234,38 @@ nav ul li {
 
 .services .box {
   height: 16rem;
-  border-bottom: 5px solid var(--primary-orange);
+  border-bottom: 5px solid var(--lava);
   padding: 10px;
   margin-bottom: 30px;
   background: var(--primary-white);
   box-shadow: 10px 10px 12px;
   transition: 0.3s ease-in-out;
+  border-radius: 8px;
+}
+
+.box h3 {
+  font-family: Monaco;
 }
 
 .services .box:hover {
-  background: var(--primary-orange);
-  border-bottom: var(--dark-blue);
+  background: var(--bluish);
+  border-bottom: var(--lava);
 }
 
 .services .box:hover .circle {
-  background: var(--primary-white);
+  background: var(--smoke);
 }
 
 .services .box:hover .icon {
-  color: var(--primary-orange)
+  color: var(--navy)
+}
+
+.services .box:hover h3 {
+  color: var(--navy);
 }
 
 .services .box:hover p {
-  color: teal;
+  color: whitesmoke;
 }
 
 
@@ -289,7 +280,8 @@ nav ul li {
 
 .experience h1 {
   text-transform: uppercase;
-  color: var(--primary-orange);
+  color: var(--lava);
+  font-family: Monaco;
 }
 
 .experience-wrapper::before {
@@ -333,13 +325,14 @@ nav ul li {
 .timeline-content {
   width: 95%;
   padding: 0 0.9375rem;
-  color: rgb(57, 57, 57);
+  color: var(--smoke);
+  font-family: Monaco;
   direction: ltr;
 }
 
 .timeline-content h3 {
   margin-top: 0.3125rem;
-  color: var(--primary-red);
+  color: var(--lava);
   font-weight: 900;
 
 }
@@ -369,18 +362,19 @@ nav ul li {
 /**********************************   PORTFOLIO    *******************************/
 
 .portfolio-wrapper {
-  background: var(--primary-light-grey);
+  background: var(--smoke);
   padding: 3rem 0;
 }
 
 .portfolio-wrapper h1 {
-  color: var(--primary-orange);
+  font-family: Monaco;
+  color: var(--navy);
 }
 
 .portfolio-image {
   width: 15rem;
-  border: 1px solid var(--primary-orange);
-  padding: 0 0.5rem;
+  border: 3px solid var(--bluish);
+  padding: 0.5 0.5rem;
 }
 
 .portfolio-image-box {
@@ -409,7 +403,7 @@ nav ul li {
   opacity: 0;
   margin-left: -8rem;
   margin-top: 3.6rem;
-  color: var(--primary-orange);
+  color: var(--navy);
   font-size: 1.5rem;
 }
 
@@ -424,22 +418,20 @@ nav ul li {
 }
 
 .portfolio-image-popupbox {
-  width: 50rem;
+  width: 68rem;
   padding: 0 0.5rem;
 }
 
-
-
-
-
-/*********************************************************************/
 .popupbox-titleBar span {
-  color: var(--primary-orange);
+  color: var(--bluish);
+  font-family: Monaco;
+  font-weight: 750;
 }
-/*********************************************************************/
 
-
-
+.popupbox-content p {
+  font-family: Monaco;
+  padding-top: 1rem;
+}
 
 .hyper-link {
   cursor: pointer;
@@ -477,19 +469,19 @@ nav ul li {
 /**********************************  Contact     *******************************/
 
 .contact {
-  background: rgb(52, 53, 53);
+  background: rgb(65, 52, 252);
   padding: 3rem 0;
   font-family: Monaco;
 }
 
 .contact h1 {
-  color: var(--primary-orange);
+  color: var(--lava);
   padding: 1.3rem 0;
   text-transform: uppercase;
 }
 
 .contact p {
-  color: var(--primary-light-grey);
+  color: white;
   font-size: 1.2rem;
 }
 
@@ -508,13 +500,13 @@ nav ul li {
   padding-left: 0!important;
 }
 
-.contat .container {
+.contact .container {
   padding: 4rem 0;
 }
 
 .contact input:focus, .contact textarea:focus {
   background: transparent;
-  color: var(--primary-teal);
+  color: var(--primary-light-grey);
   border-bottom: 2px solid var(--primary-teal);
 }
 
@@ -525,8 +517,8 @@ nav ul li {
 .contact-btn {
   margin: 1rem 0 0 0;
   width: 100%;
-  background: var(--primary-orange);
-  color: rgb(21, 21, 21);
+  background: var(--lava);
+  color: whitesmoke;
   border-radius: 1!important;
 }
 
@@ -547,7 +539,7 @@ nav ul li {
   top: -2rem;
   width: 0;
   height: 2px;
-  background: var(--primary-orange);
+  background: var(--lava);
   display: inline-block;
 }
 
@@ -569,11 +561,13 @@ textarea.form-control {
   color: var(--primary-teal);
 }
 
-
+.error-message {
+  align-content: center;
+}
 
 /**********************************/
 .text-center input ref message {
-  margin-top: -10px;
+  margin-top: -0px;
 }
 /**********************************/
 
@@ -585,14 +579,14 @@ textarea.form-control {
 /**********************************  footer     *******************************/
 
 .footer {
-  background: var(--primary-light-grey);
-  color: rgb(35, 36, 36);
+  background: var(--navy);
+  color: rgb(208, 208, 208);
   padding: 3rem;
 }
 
 .footer a {
   text-decoration: none;
-  color: rgb(35, 36, 36);
+  color: rgb(177, 177, 177);
 }
 
 .footer a:hover {
@@ -603,6 +597,19 @@ textarea.form-control {
 
 .foter p {
   margin-bottom: 0;
+}
+
+.footer-links {
+  line-height: 2.3;
+  margin-left: 35px;
+}
+
+#iconEl {
+  padding-top: 20px;
+}
+
+#copyright {
+  font-size: small;
 }
 
 

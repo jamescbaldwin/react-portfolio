@@ -13,7 +13,7 @@ const Services = () => {
                             <div className="box">
                     <div className="circle"><FontAwesomeIcon className="icon" icon={faDesktop} /> </div>
                                 <h3>M.E.R.N. Stack</h3>
-                                <p>I've learned the full MERN stack, from basic HTML and CSS vanilla JavaScript, to JQuery and React.</p>
+                                <p>Rapidly increasing familiarity with MongoDB, Express, Reat, and Node.js.</p>
                             </div>
                         </div>
                         {/* - */}
@@ -21,7 +21,7 @@ const Services = () => {
                             <div className="box">
                     <div className="circle"><FontAwesomeIcon className="icon" icon={faGoogle} /> </div>
                                 <h3>Elegant Front-End Design</h3>
-                                <p>I've learned the full MERN stack, from basic HTML and CSS vanilla JavaScript, to JQuery and React.</p>
+                                <p>Where a passion for aesthetics comes to life.</p>
                             </div>
                         </div>
                         {/* - */}
@@ -29,7 +29,7 @@ const Services = () => {
                             <div className="box">
                     <div className="circle"><FontAwesomeIcon className="icon" icon={faFacebookF} /> </div>
                                 <h3>Modern Technologies</h3>
-                                <p>I've learned the full MERN stack, from basic HTML and CSS vanilla JavaScript, to JQuery and React.</p>
+                                <p>A deep-routed curiosity for learning the latest languages and libraries.</p>
                             </div>
                         </div>
                         {/* - */}
@@ -37,7 +37,7 @@ const Services = () => {
                             <div className="box">
                     <div className="circle"><FontAwesomeIcon className="icon" icon={faFileCode} /> </div>
                                 <h3>Intuitive Interfaces</h3>
-                                <p>I've learned the full MERN stack, from basic HTML and CSS vanilla JavaScript, to JQuery and React.</p>
+                                <p>It is paramount that web creations need to make sense to the user, and thus to their creators.</p>
                             </div>
                         </div>
                         {/* - */}

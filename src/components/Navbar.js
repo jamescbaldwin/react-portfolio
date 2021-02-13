@@ -8,7 +8,7 @@ import {Link} from "react-scroll";
 const Navbar = () => {
 
     return (
-        <nav className="navbar navbar-expand-lg navbar-light bg-info fixed-top">
+        <nav className="navbar navbar-expand-lg navbar-light fixed-top">
           <div className="container">
 
         <a className="navbar-brand" href="#"><img className="profile" src={profile} alt="JAMES" 
@@ -32,7 +32,7 @@ const Navbar = () => {
               <Link smooth={true} to="services" offset={-110} className="nav-link" href="#">services</Link>
             </li>
             <li className="nav-item">
-              <Link smooth={true} to="experiences" offset={-110} className="nav-link" href="#">experience</Link>
+              <Link smooth={true} to="experience" offset={-110} className="nav-link" href="#">experience</Link>
             </li>
             <li className="nav-item">
               <Link smooth={true} to="portfolio" offset={-110} className="nav-link" href="#">portfolio</Link>
