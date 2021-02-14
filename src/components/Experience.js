@@ -20,7 +20,7 @@ const Experience = () => {
                     <div className="marker"> </div>
                         <div className="timeline-content">
                             <h3>2013-2018</h3>
-                            <p>My first job outside of college was at a prestigious hotel located (ironically) by Duke University's cmapus. I worked in food & beverage in a leadership capacity, in addition to assisting our hosting of corporate golf outings for the hotel's highly-regarded NCAA golf course.
+                            <p>My first job outside of college was at a prestigious hotel located (ironically) by Duke University's campus. I worked in food & beverage in a leadership capacity, in addition to assisting our hosting of corporate golf outings for the hotel's highly-regarded NCAA golf course.
                             </p>
                         </div>
                 </div>

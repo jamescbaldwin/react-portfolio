@@ -1,5 +1,6 @@
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import WebViewer from "@pdftron/webviewer";
 import Particles from "react-particles-js";
 import Navbar from "./components/Navbar";
 import Header from "./components/Header";
@@ -9,14 +10,9 @@ import Experience from "./components/Experience";
 import Portfolio from "./components/Portfolio";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-// import { Route, Switch } from "react-router-dom";
-// import { BrowserRouter as Router } from "react-router-dom";
-
-
 
 function App() {
   return (
-    // <Router>
     <>
     <Particles 
       params={{
@@ -46,10 +42,8 @@ function App() {
     <Portfolio />
     <Contact />
     <Footer />
-    {/* </Router> */}
-
-    {/* // pdf resume in separate page //  */}
     </>
+
   );
 }
 
