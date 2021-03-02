@@ -1,4 +1,6 @@
 import "./App.css";
+import { Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router } from 'react-router-dom';
 import "bootstrap/dist/css/bootstrap.min.css";
 import WebViewer from "@pdftron/webviewer";
 import Particles from "react-particles-js";
@@ -13,7 +15,7 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    <>
+    <Router>
     <Particles 
       params={{
         particles: {
@@ -42,7 +44,7 @@ function App() {
     <Portfolio />
     <Contact />
     <Footer />
-    </>
+    </Router>
 
   );
 }

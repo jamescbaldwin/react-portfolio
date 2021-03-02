@@ -13,7 +13,7 @@ const Services = () => {
                             <div className="box">
                     <div className="circle"><FontAwesomeIcon className="icon" icon={faDesktop} /> </div>
                                 <h3>M.E.R.N. Stack</h3>
-                                <p>Rapidly increasing familiarity with MongoDB, Express, Reat, and Node.js.</p>
+                                <p>Rapidly increasing familiarity with MongoDB, Express, React, and Node.js.</p>
                             </div>
                         </div>
                         {/* - */}
