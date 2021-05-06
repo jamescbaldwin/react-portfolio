@@ -1,20 +1,21 @@
 {
   "files": {
-    "main.css": "/portfolio4/static/css/main.98057a8a.chunk.css",
-    "main.js": "/portfolio4/static/js/main.8aec1ecf.chunk.js",
-    "main.js.map": "/portfolio4/static/js/main.8aec1ecf.chunk.js.map",
+    "main.css": "/portfolio4/static/css/main.c0d611eb.chunk.css",
+    "main.js": "/portfolio4/static/js/main.e90d70ed.chunk.js",
+    "main.js.map": "/portfolio4/static/js/main.e90d70ed.chunk.js.map",
     "runtime-main.js": "/portfolio4/static/js/runtime-main.ed9f2df4.js",
     "runtime-main.js.map": "/portfolio4/static/js/runtime-main.ed9f2df4.js.map",
     "static/css/2.a894a7ba.chunk.css": "/portfolio4/static/css/2.a894a7ba.chunk.css",
-    "static/js/2.4e8e0a47.chunk.js": "/portfolio4/static/js/2.4e8e0a47.chunk.js",
-    "static/js/2.4e8e0a47.chunk.js.map": "/portfolio4/static/js/2.4e8e0a47.chunk.js.map",
+    "static/js/2.71b4db5d.chunk.js": "/portfolio4/static/js/2.71b4db5d.chunk.js",
+    "static/js/2.71b4db5d.chunk.js.map": "/portfolio4/static/js/2.71b4db5d.chunk.js.map",
     "static/js/3.d24e933f.chunk.js": "/portfolio4/static/js/3.d24e933f.chunk.js",
     "static/js/3.d24e933f.chunk.js.map": "/portfolio4/static/js/3.d24e933f.chunk.js.map",
     "index.html": "/portfolio4/index.html",
     "static/css/2.a894a7ba.chunk.css.map": "/portfolio4/static/css/2.a894a7ba.chunk.css.map",
-    "static/css/main.98057a8a.chunk.css.map": "/portfolio4/static/css/main.98057a8a.chunk.css.map",
-    "static/js/2.4e8e0a47.chunk.js.LICENSE.txt": "/portfolio4/static/js/2.4e8e0a47.chunk.js.LICENSE.txt",
+    "static/css/main.c0d611eb.chunk.css.map": "/portfolio4/static/css/main.c0d611eb.chunk.css.map",
+    "static/js/2.71b4db5d.chunk.js.LICENSE.txt": "/portfolio4/static/js/2.71b4db5d.chunk.js.LICENSE.txt",
     "static/media/burgerApp.3c2a45c3.png": "/portfolio4/static/media/burgerApp.3c2a45c3.png",
+    "static/media/crypto.cc5b9154.png": "/portfolio4/static/media/crypto.cc5b9154.png",
     "static/media/employeeDirectory.3a8920cb.png": "/portfolio4/static/media/employeeDirectory.3a8920cb.png",
     "static/media/garageSwap.60a7abeb.png": "/portfolio4/static/media/garageSwap.60a7abeb.png",
     "static/media/profile1.176d8bf9.jpeg": "/portfolio4/static/media/profile1.176d8bf9.jpeg",
@@ -23,8 +24,8 @@
   "entrypoints": [
     "static/js/runtime-main.ed9f2df4.js",
     "static/css/2.a894a7ba.chunk.css",
-    "static/js/2.4e8e0a47.chunk.js",
-    "static/css/main.98057a8a.chunk.css",
-    "static/js/main.8aec1ecf.chunk.js"
+    "static/js/2.71b4db5d.chunk.js",
+    "static/css/main.c0d611eb.chunk.css",
+    "static/js/main.e90d70ed.chunk.js"
   ]
 }
