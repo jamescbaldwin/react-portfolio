@@ -47,7 +47,7 @@ const Experience = () => {
                     <div className="marker"></div>
                         <div className="timeline-content">
                             <h3>2021-</h3>
-                            <p>The next step in this journey toward becoming a full-time web-developer is soon approaching. I'm eager to expand my freshly acquired skillset, and look forward to the possibility of working with other creators around the world, especially if it involves relocating to a new locale. 
+                            <p>Shortly after the completion of the coding program, I was given the opportunity to join Project Custos in their developement of a native app called Colorful Desires, an e-commerce platform developed for minority-owned businesses and their clientel. This is the project that currently occupies my time.
                             </p>
                         </div>
                 </div>

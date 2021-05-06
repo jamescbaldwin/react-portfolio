@@ -53,6 +53,7 @@ const Contact = () => {
                             type="text"
                             className="form-control"
                             placeholder="Name"
+                            placeholderColor="white"
                             name="name"
                             ref={
                                 register({

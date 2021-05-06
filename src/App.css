@@ -1,10 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 :root {
   --smoke: rgb(186, 187, 201);
-  --bluish: rgb(65, 52, 252);
+  --bluish: rgb(136, 132, 191);
   --navy: rgb(29, 38, 75);
-  --lava: rgb(240, 76, 76);
+  --lava: rgb(133, 2, 2);
   --primary-white: whitesmoke;
   --primary-orange: orange;
   --dark-blue: rgb(30, 48, 96);
@@ -15,7 +16,7 @@
 }
 
 body {
-  background-color: var(--bluish)!important;
+  background-color: var(--bluish) !important;
 }
 /************************* NAVBAR *******************************/
 .nav {
@@ -24,6 +25,7 @@ body {
 
 .profile {
   width: 6rem;
+  border-radius: 50%;
 }
 
 /************************* MENU LINKS ****************************/
@@ -59,15 +61,14 @@ nav ul li {
   height: 6rem !important;
 }
 
-@media(max-width: 768px) {
+@media (max-width: 768px) {
   .navbar-brand {
     width: 7rem;
   }
 }
 
-
-
-.navbar-nav > li > a.active, .navbar-nav > li > a.active:focus {
+.navbar-nav > li > a.active,
+.navbar-nav > li > a.active:focus {
   border-top: 0.1875rem solid var(--primary-orange);
 }
 
@@ -75,9 +76,7 @@ nav ul li {
   border-top: 0.1875rem solid var(--primary-orange);
 }
 
-
 /**********************************   HEADER    *******************************/
-
 
 .header-wrapper {
   position: relative;
@@ -99,7 +98,7 @@ nav ul li {
   justify-content: center;
   align-items: center;
   text-align: center;
-  font-family: "Ubuntu" sans-serif;
+  font-family: 'Ubuntu' sans-serif;
   z-index: 1;
 }
 
@@ -108,17 +107,17 @@ nav ul li {
   text-transform: uppercase;
   font-family: Monaco;
 }
- 
+
 /*** typed ***/
 .typed-text {
   font-size: 2rem;
   color: var(--primary-white);
 }
 
-@media(max-width: 768px) {
+@media (max-width: 768px) {
   .main-info h1 {
     font-size: 1.7rem !important;
-    color: var(--primary-white)
+    color: var(--primary-white);
   }
   .typed-text {
     font-size: 1.3rem !important;
@@ -151,7 +150,7 @@ nav ul li {
   z-index: 2;
 }
 
-@media(max-width: 768px) {
+@media (max-width: 768px) {
   particles-canvas {
     display: none;
   }
@@ -169,7 +168,7 @@ nav ul li {
 .profileImg {
   width: 20rem;
   border-radius: 50%;
-  padding: .3rem;
+  padding: 0.3rem;
   border: 1px solid var(--primary-orange);
 }
 
@@ -178,10 +177,9 @@ nav ul li {
   font-family: Monaco;
   text-transform: uppercase;
   padding-top: 4rem;
-
 }
 
-@media(max-width: 468px) {
+@media (max-width: 468px) {
   .profileImg {
     width: 10rem;
   }
@@ -189,17 +187,19 @@ nav ul li {
 
 .about {
   background-color: var(--bluish);
+  /* background-color: var(--navy); */
 }
 
 #aboutEl {
   padding-right: 5rem;
 }
- .about p {
-   color: var(--smoke);
-   font-family: Monaco;
-   font-size: small;
-   padding-top: 0rem;
- }
+.about p {
+  color: var(--smoke);
+  font-family: Monaco;
+  font-size: small;
+  padding-top: 0rem;
+  text-align: justify;
+}
 /**********************************   Services    *******************************/
 
 .services {
@@ -240,16 +240,22 @@ nav ul li {
   background: var(--primary-white);
   box-shadow: 10px 10px 12px;
   transition: 0.3s ease-in-out;
-  border-radius: 8px;
+  border-radius: 4px;
 }
 
 .box h3 {
-  font-family: Monaco;
+  font-family: Monaco !important;
+}
+
+.box p {
+  font-family: Helvetica;
+  font-size: 14px;
 }
 
 .services .box:hover {
-  background: var(--bluish);
-  border-bottom: var(--lava);
+  /* background: var(--lava); */
+  background: rgb(21, 22, 36);
+  border-bottom: var(--navy);
 }
 
 .services .box:hover .circle {
@@ -257,20 +263,18 @@ nav ul li {
 }
 
 .services .box:hover .icon {
-  color: var(--navy)
+  color: var(--navy);
 }
 
 .services .box:hover h3 {
-  color: var(--navy);
+  color: var(--bluish);
 }
 
 .services .box:hover p {
   color: whitesmoke;
 }
 
-
 /**********************************  experience     *******************************/
-
 
 .experience-wrapper {
   position: relative;
@@ -286,15 +290,15 @@ nav ul li {
 
 .experience-wrapper::before {
   position: absolute;
-  content: "";
+  content: '';
   top: 0;
   left: 50%;
   margin-left: -0.0625rem;
-  width: .125rem;
+  width: 0.125rem;
   height: 100%;
   background: darkgray;
   z-index: 1;
-} 
+}
 
 .timeline-block {
   width: calc(50% + 8px);
@@ -334,19 +338,18 @@ nav ul li {
   margin-top: 0.3125rem;
   color: var(--lava);
   font-weight: 900;
-
 }
 
-@media(max-width: 768px) {
+@media (max-width: 768px) {
   .experience {
-    padding: 0.7rem
+    padding: 0.7rem;
   }
   .experience .container {
     padding-left: 0;
   }
   .experience-wrapper::before {
     left: 0.5rem;
-    margin-bottom: 1.875rem;  
+    margin-bottom: 1.875rem;
   }
   .timeline-block-right {
     float: none;
@@ -384,11 +387,11 @@ nav ul li {
 
 .overflow {
   position: absolute;
-    opacity: 0;
-    background: rgb(64, 65, 64);
-    width: 15rem;
-    height: 8rem;
-    top: 0;
+  opacity: 0;
+  background: rgb(64, 65, 64);
+  width: 15rem;
+  height: 8rem;
+  top: 0;
   border: 1px solid var(--primary-teal);
   cursor: pointer;
 }
@@ -436,19 +439,20 @@ nav ul li {
 .hyper-link {
   cursor: pointer;
   color: var(--primary-teal);
+  margin-right: 25px;
 }
 
 .hyper-link:hover {
   color: var(--primary-orange);
 }
 
-@media(max-width:768px) {
+@media (max-width: 768px) {
   .portfolio-image-popupbox {
     width: 100%;
   }
 }
 
-@media(max-height: 570px) {
+@media (max-height: 570px) {
   .popupbox-wrapper {
     height: 100%;
   }
@@ -457,7 +461,7 @@ nav ul li {
   }
 }
 
-@media(max-height: 280px) {
+@media (max-height: 280px) {
   .popupbox-wrapper {
     height: 90%;
   }
@@ -469,7 +473,7 @@ nav ul li {
 /**********************************  Contact     *******************************/
 
 .contact {
-  background: rgb(65, 52, 252);
+  background: var(--bluish);
   padding: 3rem 0;
   font-family: Monaco;
 }
@@ -485,26 +489,30 @@ nav ul li {
   font-size: 1.2rem;
 }
 
-.contact input, .contact textarea {
+.contact input,
+.contact textarea {
   width: 100%;
   box-sizing: border-box;
   background: none;
   resize: none;
   border: 0;
-  border-bottom: 2px solid var(--primary-teal);
+  border-bottom: 2px solid var(--navy);
+  /* border-bottom: 2px solid var(--primary-teal); */
   border-radius: 0;
-  color: var(--primary-light-grey);
+  color: white;
+  /* color: var(--primary-light-grey); */
   outline: 0 !important;
-  box-shadow: none!important;
+  box-shadow: none !important;
   margin-bottom: 1rem;
-  padding-left: 0!important;
+  padding-left: 0 !important;
 }
 
 .contact .container {
   padding: 4rem 0;
 }
 
-.contact input:focus, .contact textarea:focus {
+.contact input:focus,
+.contact textarea:focus {
   background: transparent;
   color: var(--primary-light-grey);
   border-bottom: 2px solid var(--primary-teal);
@@ -519,10 +527,10 @@ nav ul li {
   width: 100%;
   background: var(--lava);
   color: whitesmoke;
-  border-radius: 1!important;
+  border-radius: 10 !important;
 }
 
-@media(max-width:768px) {
+@media (max-width: 768px) {
   .contaxt {
     overflow-x: hidden;
   }
@@ -543,17 +551,20 @@ nav ul li {
   display: inline-block;
 }
 
-input:focus+.line, textarea:focus+.line {
+input:focus + .line,
+textarea:focus + .line {
   width: 100%;
   transition: width 0.5s ease-in-out;
 }
 
 input.form-control {
   margin: -0.3rem 0 !;
+  color: white !important;
 }
 
 textarea.form-control {
   margin: -0.3rem 0 !;
+  /* color: white !important; */
 }
 
 .success-message {
@@ -568,13 +579,9 @@ textarea.form-control {
 /**********************************/
 .text-center input ref message {
   margin-top: -0px;
+  color: white !important;
 }
 /**********************************/
-
-
-
-
-
 
 /**********************************  footer     *******************************/
 
@@ -612,6 +619,4 @@ textarea.form-control {
   font-size: small;
 }
 
-
 /**********************************  END  *******************************/
-

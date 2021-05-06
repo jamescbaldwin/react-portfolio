@@ -5,8 +5,8 @@ The latest (fourth) iteration of my working Portfolio Page, build with React.js,
 ``` 
 
 ### LINKS
-* [REPOSITORY](https://github.com/jamescbaldwin/portfolio4)
-* [DEPLOYMENT](https://jamescbaldwin.github.io/portfolio4/)
+* [REPOSITORY](https://github.com/jamescbaldwin/react-portfolio)
+* [DEPLOYMENT](https://jamescbaldwin.github.io/react-portfolio/)
 
 ### SCREENSHOTS
 ``` Navbar and Header components ```
