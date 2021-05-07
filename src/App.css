@@ -5,7 +5,7 @@
   --smoke: rgb(186, 187, 201);
   --bluish: rgb(136, 132, 191);
   --navy: rgb(29, 38, 75);
-  --lava: rgb(133, 2, 2);
+  --lava: rgb(165, 133, 224);
   --primary-white: whitesmoke;
   --primary-orange: orange;
   --dark-blue: rgb(30, 48, 96);
@@ -16,7 +16,7 @@
 }
 
 body {
-  background-color: var(--bluish) !important;
+  background-color: var(--navy) !important;
 }
 /************************* NAVBAR *******************************/
 .nav {
@@ -105,7 +105,7 @@ nav ul li {
 .main-info h1 {
   color: var(--smoke);
   text-transform: uppercase;
-  font-family: Monaco;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 /*** typed ***/
@@ -127,9 +127,9 @@ nav ul li {
 /*** main offer button ***/
 
 .btn-main-offer {
-  border: 1px solid var(--primary-red);
+  border: 1px solid var(--navy);
   text-transform: uppercase;
-  border-radius: 0;
+  border-radius: 6px;
   padding: 10px 12px 12px 12px;
   color: var(--primary-white);
   margin: 2rem;
@@ -137,7 +137,7 @@ nav ul li {
 
 .btn-main-offer:hover {
   text-decoration: none;
-  background-color: var(--primary-hover-red);
+  background-color: var(--primary-teal);
   color: var(--primary-white);
   transition: 0.2s ease-in-out;
 }
@@ -174,7 +174,7 @@ nav ul li {
 
 .aboutHeading {
   color: var(--lava);
-  font-family: Monaco;
+  font-family: Verdana;
   text-transform: uppercase;
   padding-top: 4rem;
 }
@@ -186,7 +186,7 @@ nav ul li {
 }
 
 .about {
-  background-color: var(--bluish);
+  background-color: var(--navy);
   /* background-color: var(--navy); */
 }
 
@@ -195,7 +195,7 @@ nav ul li {
 }
 .about p {
   color: var(--smoke);
-  font-family: Monaco;
+  font-family: Verdana;
   font-size: small;
   padding-top: 0rem;
   text-align: justify;
@@ -209,7 +209,7 @@ nav ul li {
 }
 
 .services h1 {
-  font-family: Monaco;
+  font-family: Verdana;
   color: var(--navy);
   text-transform: uppercase;
 }
@@ -244,11 +244,11 @@ nav ul li {
 }
 
 .box h3 {
-  font-family: Monaco !important;
+  font-family: Verdana !important;
 }
 
 .box p {
-  font-family: Helvetica;
+  font-family: Verdana;
   font-size: 14px;
 }
 
@@ -285,7 +285,7 @@ nav ul li {
 .experience h1 {
   text-transform: uppercase;
   color: var(--lava);
-  font-family: Monaco;
+  font-family: Verdana;
 }
 
 .experience-wrapper::before {
@@ -330,7 +330,7 @@ nav ul li {
   width: 95%;
   padding: 0 0.9375rem;
   color: var(--smoke);
-  font-family: Monaco;
+  font-family: Verdana;
   direction: ltr;
 }
 
@@ -370,7 +370,7 @@ nav ul li {
 }
 
 .portfolio-wrapper h1 {
-  font-family: Monaco;
+  font-family: Verdana;
   color: var(--navy);
 }
 
@@ -427,12 +427,12 @@ nav ul li {
 
 .popupbox-titleBar span {
   color: var(--bluish);
-  font-family: Monaco;
+  font-family: Verdana;
   font-weight: 750;
 }
 
 .popupbox-content p {
-  font-family: Monaco;
+  font-family: Verdana;
   padding-top: 1rem;
 }
 
@@ -473,13 +473,13 @@ nav ul li {
 /**********************************  Contact     *******************************/
 
 .contact {
-  background: var(--bluish);
+  background: var(--navy);
   padding: 3rem 0;
-  font-family: Monaco;
+  font-family: Verdana;
 }
 
 .contact h1 {
-  color: var(--lava);
+  color: var(--bluish);
   padding: 1.3rem 0;
   text-transform: uppercase;
 }
@@ -496,7 +496,7 @@ nav ul li {
   background: none;
   resize: none;
   border: 0;
-  border-bottom: 2px solid var(--navy);
+  border-bottom: 2px solid var(--primary-teal);
   /* border-bottom: 2px solid var(--primary-teal); */
   border-radius: 0;
   color: white;
@@ -531,7 +531,7 @@ nav ul li {
 }
 
 @media (max-width: 768px) {
-  .contaxt {
+  .contact {
     overflow-x: hidden;
   }
   .contact .container {
@@ -564,7 +564,6 @@ input.form-control {
 
 textarea.form-control {
   margin: -0.3rem 0 !;
-  /* color: white !important; */
 }
 
 .success-message {
@@ -577,9 +576,13 @@ textarea.form-control {
 }
 
 /**********************************/
-.text-center input ref message {
-  margin-top: -0px;
+.text-center input ref {
+  margin-bottom: 100px !important;
   color: white !important;
+}
+
+form-control ref message {
+  color: white;
 }
 /**********************************/
 

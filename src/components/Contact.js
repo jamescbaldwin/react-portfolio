@@ -60,7 +60,8 @@ const Contact = () => {
                                     required: "Please enter your name",
                                     maxLength: {
                                         value: 20,
-                                        message: "Please enter a name with fewer than 20 characters"
+                                        message: "Please enter a name with fewer than 20 characters",
+                                        
                                     }
                                 })
                             }
