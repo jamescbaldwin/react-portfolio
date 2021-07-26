@@ -11,32 +11,35 @@ const Services = () => {
                     <div className="row">
                         <div className="col-lg-3 col-md-6 col-sm-6">
                             <div className="box">
-                    <div className="circle"><FontAwesomeIcon className="icon" icon={faDesktop} /> </div>
+                    
                                 <h3>M.E.R.N. Stack</h3>
-                                <p>Rapidly increasing familiarity with MongoDB, Express, React, and Node.js.</p>
+                                <div className="circle"><FontAwesomeIcon className="icon" icon={faDesktop} /> </div>
+                                <p>Rapidly increasing familiarity with MongoDB, Express, React, and Node.js. Plus proficiency with JavaScript ES6.</p>
                             </div>
                         </div>
                         {/* - */}
                         <div className="col-lg-3 col-md-6 col-sm-6">
                             <div className="box">
-                    <div className="circle"><FontAwesomeIcon className="icon" icon={faGoogle} /> </div>
                                 <h3>Elegant Front-End Design</h3>
-                                <p>Where a passion for aesthetics comes to life.</p>
+                                <div className="circle"><FontAwesomeIcon className="icon" icon={faGoogle} /> </div>
+
+                                <p>Where a passion for any and all aesthetics comes to life. Proper style should complement, not replace substance.</p>
                             </div>
                         </div>
                         {/* - */}
                         <div className="col-lg-3 col-md-6 col-sm-6">
                             <div className="box">
-                    <div className="circle"><FontAwesomeIcon className="icon" icon={faFacebookF} /> </div>
                                 <h3>Modern Technologies</h3>
-                                <p>A deep-routed curiosity for learning the latest languages and libraries.</p>
+                                <div className="circle"><FontAwesomeIcon className="icon" icon={faFacebookF} /> </div>
+                                <p>A deep-routed curiosity for learning the latest languages and libraries, without forgetting the basics.</p>
                             </div>
                         </div>
                         {/* - */}
                         <div className="col-lg-3 col-md-6 col-sm-6">
                             <div className="box">
-                    <div className="circle"><FontAwesomeIcon className="icon" icon={faFileCode} /> </div>
                                 <h3>Intuitive Interfaces</h3>
+                                <div className="circle"><FontAwesomeIcon className="icon" icon={faFileCode} /> </div>
+
                                 <p>It is paramount that web creations need to make sense to the user, and thus to their creators.</p>
                             </div>
                         </div>

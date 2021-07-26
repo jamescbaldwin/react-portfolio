@@ -221,6 +221,8 @@ nav ul li {
   border-radius: 50%;
   width: 3.125rem;
   height: 3.125rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .services .icon {
@@ -230,17 +232,24 @@ nav ul li {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  
 }
 
 .services .box {
-  height: 16rem;
+  display: flex;
+  flex-direction: column;
+  height: 18rem;
+  width: 17rem;
   border-bottom: 5px solid var(--lava);
-  padding: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+
   margin-bottom: 30px;
   background: var(--primary-white);
   box-shadow: 10px 10px 12px;
   transition: 0.3s ease-in-out;
-  border-radius: 4px;
+  border-radius: 10px;
+  justify-content: center;
 }
 
 .box h3 {
@@ -250,28 +259,29 @@ nav ul li {
 .box p {
   font-family: Verdana;
   font-size: 14px;
+  text-align: justify;
 }
 
 .services .box:hover {
-  /* background: var(--lava); */
-  background: rgb(21, 22, 36);
+  background-color: var(--navy);
   border-bottom: var(--navy);
 }
 
 .services .box:hover .circle {
-  background: var(--smoke);
+  background: white;
 }
 
 .services .box:hover .icon {
-  color: var(--navy);
+  color: var(--primary-orange);
 }
 
 .services .box:hover h3 {
-  color: var(--bluish);
+  color: var(--lava);
 }
 
 .services .box:hover p {
-  color: whitesmoke;
+  color: var(--lava);
+
 }
 
 /**********************************  experience     *******************************/
@@ -585,6 +595,30 @@ form-control ref message {
   color: white;
 }
 /**********************************/
+
+/**********************************  Resume     *******************************/
+.resume-container {
+  height: 100vw;
+  width: 100%;
+  padding: 10%;
+
+}
+
+.resume-header {
+  color: whitesmoke;
+  font-family: Verdana;
+  text-align: center;
+  font-size: 35px;
+  margin-bottom: 5vw;
+}
+
+.resume-screenshot { 
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 6px;
+}
+
 
 /**********************************  footer     *******************************/
 
