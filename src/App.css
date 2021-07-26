@@ -598,10 +598,9 @@ form-control ref message {
 
 /**********************************  Resume     *******************************/
 .resume-container {
-  height: 100vw;
+  height: 100%;
   width: 100%;
-  padding: 10%;
-  margin-bottom: 5vh;
+  padding: 4rem;
 }
 
 .resume-title {
@@ -633,6 +632,7 @@ form-control ref message {
   background: var(--navy);
   color: rgb(208, 208, 208);
   padding: 3rem;
+  margin-top: 10rem;
 }
 
 .footer a {
