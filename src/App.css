@@ -601,15 +601,22 @@ form-control ref message {
   height: 100vw;
   width: 100%;
   padding: 10%;
+  margin-bottom: 5vh;
+}
 
+.resume-title {
+  color: var(--lava);
+  font-family: Verdana;
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 .resume-header {
   color: whitesmoke;
   font-family: Verdana;
   text-align: center;
-  font-size: 35px;
-  margin-bottom: 5vw;
+  font-size: 25px;
+  margin-bottom: 3vw;
 }
 
 .resume-screenshot { 
